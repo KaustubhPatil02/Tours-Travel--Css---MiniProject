@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Explore Travels N Tours </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+      font-family: "Lato", sans-serif;
+      display: flex;
+
+    }
+
+    .sidebar {
+      height: 100vh;
+      background-color: #111;
+      overflow-x: hidden;
+      padding-top: 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 5;
+    }
+
+    .container {
+      flex: 5
+    }
+
+    .sidebar a {
+      padding: 6px 8px 6px 16px;
+      text-decoration: none;
+      font-size: 20px;
+      color: rgb(235, 233, 204);
+      display: block;
+    }
+
+    .sidebar a:hover {
+      color: rgb(156, 66, 6);
+    }
+
+    .main {
+      /* margin-left: 200px; */
+      /* Same as the width of the sidenav */
+      padding: 0px 30px;
+    }
+
+    .sidebar img {
+      width: 40%;
+
+    }
+
+    .sidebar .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .sidebar .links {
+      display: flex;
+      flex-direction: column;
+      align-items: flex;
+    }
+
+    @media screen and (max-height: 450px) {
+      .sidebar {
+        padding-top: 18px;
+      }
+
+      .sidebar a {
+        font-size: 28px;
+      }
+    }
+
+    body {
+      background-image: url("https://source.unsplash.com/1600x900/?pub");
+      background-size: cover;
+
+    }
+
+    .main {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #111111;
+      margin: 0;
+      width: 98%;
+      padding: 10px;
+
+    }
+
+    * {
+      margin: 0;
+
+    }
+
+    .main img {
+      width: 5%;
+      padding: 0 10px;
+    }
+
+    .main h1 {
+      color: white;
+    }
+
+    .main-container {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      height: 80%;
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+    }
+
+    .row img {
+      padding: 15px;
+      width: 45%;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="sidebar">
+    <div class="logo">
+      <img src="./img/logo.jpeg" alt="">
+    </div>
+    <hr width="90%">
+    <div class="links">
+      <a href="booking.html"target="_blank"><i class="fa fa-fw fa-home"></i> Home</a>
+      <a href="./contact.html" target="_blank"><i class="fa fa-fw fa-phone"></i> Contact</a>
+      <a href="https://www.instagram.com/flighttour/" target="_blank"><i class="fa fa-fw fa-instagram"></i> Instagram
+      </a>
+      <a href="https://hippie-inheels.com/essential-travel-items/" target="_blank"><i
+          class="fa fa-fw fa-check-square"></i>
+        Essential-travel-items</a>
+      <a href=" https://www.google.com/maps/" target="blank" ><i class="fa fa-fw fa-map-o"></i> Map </a>
+      <a href=" https://www.tripadvisor.in/ShowForum-g293860-i511-India.html/" target="_blank"><i
+          class="fa fa-fw fa-commenting-o"></i> Our forum </a>
+    </div>
+  </div>
+  <div class="container">
+    <div class="main">
+
+      <img src="./img/logo.jpeg" alt="">
+      <h1> Explore Travels and Tours  </h1>
+
+    </div>
+    <div class="main-container">
+      <div class="row">
+        <img src="https://source.unsplash.com/1600x900/?bar" alt="">
+        <img src="https://source.unsplash.com/1600x900/?lens" alt="">
+
+      </div>
+      <div class="row">
+
+        <img src="https://source.unsplash.com/1600x900/?travels" alt="">
+        <img src="https://source.unsplash.com/1600x900/?nightlife" alt="">
+      </div>
+    </div>
+  </div>
+</body>
+</html>

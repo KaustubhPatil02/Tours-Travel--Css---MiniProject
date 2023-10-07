@@ -1,0 +1,140 @@
+<html> 
+
+<head> 
+
+<title> CREATE E-MAIL ID </title> 
+
+</head> 
+
+  
+
+<body  background  = "img/l.jpeg"> 
+
+
+
+<form name = "EmailForm" action = ""> 
+
+<b>  ENETR FIRST NAME : </b> 
+
+<input type = "text" id = "txt1" value = ""> </input> </br> </br> 
+
+  
+
+<b> ENTER LAST NAME  : </b>  
+
+<input type = "text" id = "txt2" value = ""> </input> </br> </br> 
+
+  
+
+<b> MOBILE NUMBER : </b> 
+
+<input type = "text" id = "n1" value = ""> </input> </br> </br> 
+
+  
+
+<input type = "button" id = "b1" value = "CREATE E-MAIL ID" onclick = "email()"> </input>  </br> </br> 
+
+  
+
+<b> E-MAIL ID : </b> 
+
+<input type = "text" id = "r1" value = "" readonly> </input> </br> </br>  
+
+  
+
+<b> ENTER YOUR PASSWORD : </b> 
+
+<input type = "password" id = "p1" value = ""> </input> </br> </br> 
+
+  
+
+<b> CONFIRM PASSWORD : <b> 
+
+<input type = "password" id = "p2" value = ""> </input> </br> </br> 
+
+  
+
+<input type = "button" id = "c1" value = "CONFIRM PASSWORD" onclick = "password()"> </input> 
+
+  
+
+<input type = "reset" id = "rs1" value = "RESET"> </input> 
+
+</form> 
+
+  
+
+<script language = "javascript" type = "text/javascript"> 
+
+  
+
+function email () 
+
+{ 
+
+var num = document.forms.EmailForm.n1.value; 
+
+  
+
+if (num.length < 10) 
+
+{ 
+
+alert ("MOBILE NUMBER YOU ENTERED IS IN-CORRECT , PLZ ENTER VALID NUMBER"); 
+
+} 
+
+  
+
+var a = document.forms.EmailForm.txt1.value; 
+
+var b = document.forms.EmailForm.txt2.value; 
+
+  
+
+var result = a + b; 
+
+  
+
+document.forms.EmailForm.r1.value = result + "@gamil.com"; 
+
+} 
+
+  
+
+function password () 
+
+{ 
+
+var pass = document.forms.EmailForm.p1.value; 
+
+var pass1 = document.forms.EmailForm.p2.value; 
+
+  
+
+if (pass == pass1) 
+
+{ 
+
+alert ("ACCOUNT CREATEED SUCCESSFULLY"); 
+
+} 
+
+else  
+
+{ 
+
+alert ("SORRY PASSWORD YOU ENTERED IS WORNG , PLEASE TRY AGAIN"); 
+
+} 
+
+} 
+
+</script> 
+
+</body> 
+
+</html> 
+
+ 
+
